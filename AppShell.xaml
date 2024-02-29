@@ -5,11 +5,42 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:mockEcomm"
     Shell.FlyoutBehavior="Disabled"
-    Title="mockEcomm">
+    FlyoutBackgroundColor="White"
+    Title="mockEcomm"
+    xmlns:view="clr-namespace:mockEcomm.Views">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+
+       
+            <ShellContent Title="Home"
+              ContentTemplate="{DataTemplate view:HomePage}"
+              >
+
+            </ShellContent>
+
+            <ShellContent Title="ProductsPage"
+                            Icon="dotnet_bot.png"
+              ContentTemplate="{DataTemplate view:ProductsPage}"
+              >
+
+            </ShellContent>
+            <ShellContent Title="ProductDetailsPage"
+                          Icon="dotnet_bot.png"
+              ContentTemplate="{DataTemplate view:ProductDetailPage}"
+              >
+
+            </ShellContent>
+            
+           
+        
+        <ShellContent 
+            Title="Home"
+            Icon="dotnet_bot.png"
+            ContentTemplate="{DataTemplate view:HomePage}"
+            ></ShellContent>
+        
+        
+    </TabBar>
+
 
 </Shell>

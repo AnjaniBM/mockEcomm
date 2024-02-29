@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mockEcomm.Views.HomePage"
+            xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+            Title="Home">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="{StaticResource Primary}" StatusBarStyle="LightContent"/>
+    </ContentPage.Behaviors>
+
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Mobile">
+            <MenuFlyoutItem Text="Samsung"></MenuFlyoutItem>
+            <MenuFlyoutItem Text="Oppo"></MenuFlyoutItem>
+            <MenuFlyoutItem Text="Motorola"></MenuFlyoutItem>
+          </MenuBarItem>
+        <MenuBarItem Text="Laptop">
+            <MenuFlyoutSubItem Text ="z Series">
+            <MenuFlyoutItem Text="Lenevo"></MenuFlyoutItem>
+            
+            <MenuFlyoutItem Text="Dell"></MenuFlyoutItem>
+            <MenuFlyoutItem Text="Asus"></MenuFlyoutItem>
+            </MenuFlyoutSubItem>
+        </MenuBarItem>
+        <MenuBarItem Text="Watches">
+            <MenuFlyoutItem Text="Boat"></MenuFlyoutItem>
+            <MenuFlyoutItem Text="Hammer"></MenuFlyoutItem>
+            <MenuFlyoutItem Text="FitBit"></MenuFlyoutItem>
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+
+    <ContentPage.ToolbarItems>
+       
+        <ToolbarItem Text="Admin Login" IconImageSource="dotnet_bot.png"  Clicked="ToolbarItem_Clicked" ></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
+    <VerticalStackLayout>
+        <Button Text="Next Page" Clicked="Button_Clicked_1" VerticalOptions="Center" HorizontalOptions="Center"></Button>
+        
+        
+    </VerticalStackLayout>
+</ContentPage>
